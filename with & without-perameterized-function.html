@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function with and without parameter</title>
+</head>
+<body>
+    <style>
+        button{
+            margin: 30px 30px;
+            padding: 15px 25px 15px 25px;
+            background-color: rgb(1, 1, 87);
+            color: white;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+    </style>
+    <h1>parameterized function</h1>
+
+    <button type="button" onclick="Withargument(20 , 43)" value="submit">click here to call with argument function</button>
+    <button type="button" onclick="Withoutargument()" value="submit">click here to call with Out argument function</button>
+
+    <h2 id ="Withargument"></h2>
+    <h2 id = "Withoutargument"></h2>
+    <script>
+        function Withargument(a , b){
+            let add = a + b;
+            document.getElementById('Withargument').innerHTML="parameterized function with argument. <br> Ans = "+add;
+            // document.write("<h2>parameterized function with argument. <br> Ans = "+add+"</h2>");
+
+        }
+
+        function Withoutargument(m = 30 , n = 20){
+            let sum = m + n;
+            document.getElementById('Withoutargument').innerHTML="parameterized function with Out argument. <br> Ans = "+sum;
+            // document.write("<h2>parameterized function with Out argument. <br> Ans = "+sum+"</h2>");
+        }
+
+    </script>
+</body>
+</html>

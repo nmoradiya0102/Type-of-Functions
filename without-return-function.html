@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Without return function</title>
+</head>
+<body>
+    <style>
+        button{
+            margin: 30px 30px;
+            padding: 15px 25px 15px 25px;
+            background-color: darkblue;
+            color: white;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+    </style>
+
+    <button onclick="returnfunction(20 , 9)">Click here to call without return function..</button>
+    <h1 id="return"></h1>
+</body>
+</html>
+<script>
+       function returnfunction(a , b){
+        let add = a + b;
+        document.getElementById('return').innerHTML="Without return function..</br> Ans = " + add;      
+    }
+    // function returnfunction(a=20 , b=10){
+    //     let add = a + b;
+    //     document.getElementById('return').innerHTML="Without return function..</br> Ans = " + add;   
+    // }
+    // returnfunction();
+</script>
